@@ -165,7 +165,7 @@
   
   
   /* Hero Section */
-  .hero {
+  /* .hero {
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -233,7 +233,83 @@
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
   }
-  
+   */
+
+
+   .hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 30px;
+    flex-wrap: wrap;
+  }
+
+  .hero-content,
+  .hero-image {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .hero-content {
+    margin-bottom: 30px;
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  .hero-content a {
+    padding: 12px 24px;
+    background-color: #FFB800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+
+  @media (max-width: 760px) {
+    .hero-section{
+        height: 130vh;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .hero-section {
+      flex-wrap: nowrap;
+    }
+
+
+    .hero-content,
+    .hero-image {
+      flex: 1;
+      text-align: left;
+    }
+
+    .hero-content {
+      margin-bottom: 0;
+      padding-right: 40px;
+    }
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+
   /* About Section */
   .about {
     padding: 8rem 0;
@@ -321,6 +397,7 @@
     .video-card {
       width: calc(33.333% - 1rem); /* 3 videos per row, account for gaps */
     }
+    
   }
   
   
@@ -642,6 +719,10 @@
     .nav-links {
       display: none;
     }
+
+    /* .hero-photo{
+        transform: translate(-50%, -53.33%) !important;
+    } */
     
     .hero h1 {
       font-size: 2.5rem;
