@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Professional Video Editing Portfolio</title>
+<!-- Allow fullscreen for your site -->
+<meta http-equiv="Permissions-Policy" content="fullscreen=*">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">MAVERICK</div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  
+  
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div id="hero-video-placeholder" class="hero-video"></div>
+    <h1>Bringing Your Vision to Life, One Edit at a Time</h1>
+    <p>Professional video editing that captivates your audience, elevates your brand, and drives engagement across all platforms</p>
+    <a href="#portfolio" class="cta-btn">View My Work</a>
+    
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container about-container">
+      <div class="about-text">
+        <h2 style="font-family: 'Montserrat', sans-serif;text-transform: uppercase;">About Us</h2>
+        <p>With over A year of experience in video editing, I specialize in creating compelling visual stories that resonate with audiences and achieve measurable results for brands and creators.</p>
+        <p>My approach combines technical expertise with creative vision, ensuring each project receives the attention to detail it deserves. From color grading to sound design, every element is crafted to perfection.</p>
+        <p>I've worked with clients, helping them amplify their message through the power of professional video editing.</p>
+      </div>
+      <div class="about-image">
+        <img src="Motion Graphics in Davinci Resolve 16.jpeg" alt="Professional video editing setup">
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+<!-- Portfolio Tabs -->
+<section id="portfolio" class="portfolio">
+  <div class="container">
+    <br>
+    <div class="section-header">
+      <h2>Featured Work</h2>
+      <p>A showcase of my most impactful video editing projects across different categories</p>
+    
+    
+    <!-- Tabs -->
+    <div class="category-tabs" id="category-tabs">
+      <!-- Tabs will be injected by JS -->
+    </div>
+  </div>
+
+    <!-- Video Content -->
+    <div id="video-gallery">
+      <div class="loader">
+        <div class="spinner"></div>
+      </div>
+    </div>
+  </div>
+  <br>
+</section>
+
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="section-header">
+        <h2>Services Offered</h2>
+        <p>Professional video editing solutions tailored to your specific needs</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">📹</div>
+          <h3>Content Creation</h3>
+          <p>Transform your raw footage into engaging, platform-optimized content for YouTube, Instagram, TikTok and more.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎬</div>
+          <h3>Commercial Editing</h3>
+          <p>Professional editing for advertisements, product videos, and promotional content that drives conversions.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🎨</div>
+          <h3>Color Grading</h3>
+          <p>Enhance the visual aesthetic of your footage with professional color grading and correction.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔊</div>
+          <h3>Audio Enhancement</h3>
+          <p>Professional sound design, mixing, and audio cleanup to elevate the quality of your videos.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">✨</div>
+          <h3>Visual Effects</h3>
+          <p>Custom motion graphics, transitions, and visual effects to make your content stand out.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📱</div>
+          <h3>Multi-Platform Optimization</h3>
+          <p>Tailored edits optimized for different platforms and aspect ratios to maximize your reach.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <h2>Client Feedback</h2>
+        <p>What clients are saying about my video editing services</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p class="testimonial-text">Working with this editor transformed our brand's video content. The attention to detail and storytelling ability took our videos to a professional level we didn't think was possible with our budget.</p>
+          <div class="client-info">
+            <div class="client-image"></div>
+            <div>
+              <div class="client-name">Emma Rodriguez</div>
+              <div class="client-title">Marketing Director, Fusion Brands</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">The turnaround time and quality of work exceeded my expectations. My YouTube channel has seen a 43% increase in viewer retention since we started working together.</p>
+          <div class="client-info">
+            <div class="client-image"></div>
+            <div>
+              <div class="client-name">Marcus Chen</div>
+              <div class="client-title">Content Creator</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p class="testimonial-text">I've worked with many editors over my career, but none have understood my vision as quickly and executed it as flawlessly. The color grading alone is worth every penny.</p>
+          <div class="client-info">
+            <div class="client-image"></div>
+            <div>
+              <div class="client-name">Sophia Washington</div>
+              <div class="client-title">Independent Filmmaker</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- CTA Section -->
+  <section id="contact" class="cta">
+    <div class="container">
+      <h2>Ready to Elevate Your Content?</h2>
+      <p>Let's create videos that not only look professional but drive real results for your brand or channel.</p>
+      <a href="https://wa.me/918248516868?text=Hi%20Maran!%20I%27m%20interested%20in%20your%20video%20editing%20services." 
+         class="cta-btn" 
+         target="_blank" 
+         rel="noopener noreferrer">
+        Get in Touch →
+      </a>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <h3>MAVERICK</h3>
+          <p>Professional video editing services that help you stand out in a crowded digital landscape.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/maverick_maaran/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/nanmaran-m-1314mav/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact Info</h4>
+          <div class="contact-info">
+            <i class="fas fa-envelope"></i>
+            <div>maaran1314@gmail.com</div>
+          </div>
+          <div class="contact-info">
+            <i class="fas fa-phone"></i>
+            <div>+91 82485 16868</div>
+          </div>
+          <div class="contact-info">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>Salem, TamilNadu</div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 MAVERICK — All Rights Reserved</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+  <script src="script.js"></script>
